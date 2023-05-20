@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do Carro: <input type="number" name="txtvel" id="txtvel"> km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    
+    <script>
+       function calcular() {
+             let txtvel = window.document.querySelector('input#txtvel')
+             let res = window.document.querySelector('div#res')
+             let vel = Number(txtvel.value)
+             res.innerHTML = `Sua velocidade atual é de ${vel}`
+        }
+    </script>
+</body>
+</html>
